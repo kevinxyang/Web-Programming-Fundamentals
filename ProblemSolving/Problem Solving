@@ -73,6 +73,22 @@ draw in order to guarantee that we get atleast one matching pair. Our second
 subgoal is to find the minimum number of socks we have to draw in order to 
 guarantee that we get a matching pair of each color.
 
-
+Identify potential solutions
+For the first sub-problem we know that we have to draw atleast 2 socks in order
+to form a pair. If those two socks are the same, then we are done. If those two
+socks are different, then we draw a third sock. If the third sock is the same as
+either the first or the second sock (which we know must be different), then we
+are done. If the third sock is different from the first or second sock, we need
+to draw a fourth sock. If the fourth sock is the same as any of the previous
+three socks then we are done. If the fourth sock is different from all of the
+previous three socks, then we must draw a fifth sock. The fifth sock must be
+the same color as one of the previous four (because there are only 4 colors).
+For the second sub-problem we should think about this backwards. Theoretically,
+we could draw 16 socks, and not get a matching pair (by omitting all the white
+socks). So our minimum number for the second sub-problem is ATLEAST 16. So
+assume we've drawn 16 socks, none of which are white. We have 4 socks left, all
+of which are white. If we draw 2 of these socks, we are guaranteed a matching
+pair of white socks. Therefore we need to draw atleast 18 socks to guarantee
+that we have a matching pair of socks in every color.
 
 
