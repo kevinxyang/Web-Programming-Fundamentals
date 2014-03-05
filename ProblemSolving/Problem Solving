@@ -95,6 +95,17 @@ Evaluate each potential solution
 Both solutions fully satisfy the subgoals. All cases are covered in the
 solutions.
 
+Choose a solution and develop a plan to implement it.
+Solution (part A):
+The worst case scenerio is that you choose 4 different colored socks before you
+choose your fifth sock. The fifth sock must be the same color as one of the four
+previous socks. Therefore, the minimum number of socks to guarantee a matching 
+pair of socks is 5.
 
+Solution (part B):
+The worst case scenerio is that you choose 16 socks, none of which are white. 
+From the remaining 4 white socks, if you choose 2 of them, you are guaranteed to
+get the final pair of white socks. Therefore, the minimum number of socks to
+guarantee a matching pair of socks of each color is 18.
 
 
