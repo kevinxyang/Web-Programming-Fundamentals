@@ -27,3 +27,5 @@ Solution:
   4) Have the man take the parrot over to the other side.
 
 I ran through a test case to check if at any point the man leaves two objects that aren’t compatible. This solution passes the test, so I believe it works.
+
+TEST TEST TEST TEST
