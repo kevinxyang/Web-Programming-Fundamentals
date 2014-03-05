@@ -65,4 +65,14 @@ socks we have to select in order to guarantee 2 black socks, 2 brown socks, OR 2
 white socks and the minimum number of socks we have to select in order to 
 guarantee 2 black socks, 2 brown socks, AND 2 white socks.
 
+Break the problem apart
+The constraints are we can't draw more socks than we have of each color, but we
+must draw atleast 2 socks to form a pair. The subgoals were already defined in
+the problem. Our first subgoal is to find the minimum number of socks we have to
+draw in order to guarantee that we get atleast one matching pair. Our second
+subgoal is to find the minimum number of socks we have to draw in order to 
+guarantee that we get a matching pair of each color.
+
+
+
 
