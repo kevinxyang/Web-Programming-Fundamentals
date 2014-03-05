@@ -91,4 +91,10 @@ of which are white. If we draw 2 of these socks, we are guaranteed a matching
 pair of white socks. Therefore we need to draw atleast 18 socks to guarantee
 that we have a matching pair of socks in every color.
 
+Evaluate each potential solution
+Both solutions fully satisfy the subgoals. All cases are covered in the
+solutions.
+
+
+
 
