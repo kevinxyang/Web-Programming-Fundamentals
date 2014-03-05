@@ -4,7 +4,8 @@ Problem Solving
 03/04/2014
 ———
 
-Problem 1
+A Cat, a Parrot, and a Bag of Seed
+==================================
 
 Define the problem
 There are 3 objects (cat, parrot, seed) that the man must move from one side of the river to the other. He can only move one object at a time. The insight is that he cannot move the seed first (cat would eat the parrot, nor can he move the cat first (parrot would eat the seed) - he must move the parrot first. The overall goal is to get all three objects from one side of the river to the other side safely.
@@ -28,4 +29,11 @@ Solution:
 
 I ran through a test case to check if at any point the man leaves two objects that aren’t compatible. This solution passes the test, so I believe it works.
 
-TEST TEST TEST TEST
+
+Socks in the Dark
+=================
+
+Define the problem
+There are 20 total socks. 10 of them are black, 6 of them are brown, and the remaining 4 are white. The question asks for 2 things. The minimum number of socks we have to select in order to guarantee 2 black socks, 2 brown socks, OR 2 white socks and the minimum number of socks we have to select in order to guarantee 2 black socks, 2 brown socks, AND 2 white socks.
+
+
