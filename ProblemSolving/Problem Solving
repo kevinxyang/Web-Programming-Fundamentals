@@ -8,32 +8,61 @@ A Cat, a Parrot, and a Bag of Seed
 ==================================
 
 Define the problem
-There are 3 objects (cat, parrot, seed) that the man must move from one side of the river to the other. He can only move one object at a time. The insight is that he cannot move the seed first (cat would eat the parrot, nor can he move the cat first (parrot would eat the seed) - he must move the parrot first. The overall goal is to get all three objects from one side of the river to the other side safely.
+There are 3 objects (cat, parrot, seed) that the man must move from one side of 
+the river to the other. He can only move one object at a time. The insight is 
+that he cannot move the seed first (cat would eat the parrot, nor can he move 
+the cat first (parrot would eat the seed) - he must move the parrot first. The 
+overall goal is to get all three objects from one side of the river to the other
+side safely.
 
 
 Break the problem apart
-The constraints are that neither the cat and the parrot nor the parrot and the seed can be left alone on either side of the river. Let define two objects to be compatible if and only if one won’t eat the other if left alone (and vice-versa). We can break this problem up into two subgoals. The first subgoal is when the man moves the first object, he must make sure the two remaining objects are compatible. The second subgoal is making sure the first and second objects that the man has moved are compatible (because they will be left alone, when we go and retrieve the final object). 
+The constraints are that neither the cat and the parrot nor the parrot and the 
+seed can be left alone on either side of the river. Let define two objects to be
+compatible if and only if one won’t eat the other if left alone (and vice-versa)
+. We can break this problem up into two subgoals. The first subgoal is when the 
+man moves the first object, he must make sure the two remaining objects are 
+compatible. The second subgoal is making sure the first and second objects that 
+the man has moved are compatible (because they will be left alone, when we go 
+and retrieve the final object). 
 
 Identify potential solutions
-From the insight earlier, the man must move the parrot first. Now that the parrot is out of the way the man needs to pick the second object such that it will be compatible with the parrot. Unfortunately, neither the cat nor the seed is compatible with the parrot. But the man can still bring over either the cat or the seed AND take back the parrot. Let’s have the man bring over the cat, and take back the parrot. Now we have the cat on one side, and the man, the parrot, and the seed on the other side. Have the man set down the parrot, and bring the seed over to the cat side. Now we have the man, the cat and the seed on one side and the parrot on the other side. Since the cat and the seed are compatible, all that’s left to do is for the man to go and get the parrot.
+From the insight earlier, the man must move the parrot first. Now that the 
+parrot is out of the way the man needs to pick the second object such that it 
+will be compatible with the parrot. Unfortunately, neither the cat nor the seed 
+is compatible with the parrot. But the man can still bring over either the cat 
+or the seed AND take back the parrot. Let’s have the man bring over the cat, and
+take back the parrot. Now we have the cat on one side, and the man, the parrot,
+and the seed on the other side. Have the man set down the parrot, and bring the 
+seed over to the cat side. Now we have the man, the cat and the seed on one side
+and the parrot on the other side. Since the cat and the seed are compatible, all
+that’s left to do is for the man to go and get the parrot.
 
 Evaluate each potential solution
-Each solution satisfies each of our subgoals. I believe the solutions should work in all cases since we’ve made sure that in each step the objects are “compatible”.
+Each solution satisfies each of our subgoals. I believe the solutions should 
+work in all cases since we’ve made sure that in each step the objects are 
+“compatible”.
 
 Choose a solution and develop a plan to implement it
 Solution:
   1) Have the man take the parrot to the other side.
-  2) Have the man take the cat to the other side, and bring the parrot back over to the original side.
+  2) Have the man take the cat to the other side, and bring the parrot back over
+  	 to the original side.
   3) Have the man take the seed over to the other side (with the cat).
   4) Have the man take the parrot over to the other side.
 
-I ran through a test case to check if at any point the man leaves two objects that aren’t compatible. This solution passes the test, so I believe it works.
+I ran through a test case to check if at any point the man leaves two objects 
+that aren’t compatible. This solution passes the test, so I believe it works.
 
 
 Socks in the Dark
 =================
 
 Define the problem
-There are 20 total socks. 10 of them are black, 6 of them are brown, and the remaining 4 are white. The question asks for 2 things. The minimum number of socks we have to select in order to guarantee 2 black socks, 2 brown socks, OR 2 white socks and the minimum number of socks we have to select in order to guarantee 2 black socks, 2 brown socks, AND 2 white socks.
+There are 20 total socks. 10 of them are black, 6 of them are brown, and the 
+remaining 4 are white. The question asks for 2 things. The minimum number of 
+socks we have to select in order to guarantee 2 black socks, 2 brown socks, OR 2
+white socks and the minimum number of socks we have to select in order to 
+guarantee 2 black socks, 2 brown socks, AND 2 white socks.
 
 
