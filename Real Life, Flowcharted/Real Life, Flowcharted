@@ -29,3 +29,19 @@ Daily Routine at the Gym.
 
 Conditional
 ===========
+
+Deciding what to wear.
+-> Start
+-> Am I going outside?
+	-> Yes
+		-> Is it cold outside?
+			-> Yes
+				-> Put on a hoodie and jeans.
+				-> End
+			-> No
+				-> Put on a pair of shorts and a t-shirt.
+				-> End
+	-> No
+		-> Wear whatever is at the top of the pile.
+		-> End
+
