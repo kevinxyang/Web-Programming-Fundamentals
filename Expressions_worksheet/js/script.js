@@ -42,6 +42,12 @@ console.log("Each person ate" + " " + slicesPerPerson + " " +
 // Slice of Pie (part 2)
 // =====================
 
+// Declared the number of slices Sparky gets and set it equal to the total
+// number of slices (slices per pizza * total number of pizzas) modulo the total
+// number of people at the party.
 var sparkysSlices = numberOfPizzas * slicesPerPizza % numberOfPeople;
 
-console.log(sparkysSlices);
+//Printed sparkysSlices to the console.
+console.log("Sparky got" + " " + sparkysSlices + " " + "slices of pizza.");
+
+
