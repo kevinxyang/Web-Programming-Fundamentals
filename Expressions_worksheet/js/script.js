@@ -74,11 +74,27 @@ console.log("You have spent a total of $" + totalAmount +
 // Discounts
 // =========
 
+// Declared and defined the item.
+var itemDescription = "Xbox";
+// Declared and defined the original price of the item.
 var originalPrice = 250;
-var discountPercentage = .25;
-var salesTaxPercentage = .07;
-var costWithoutTax = originalPrice * (1 - discountPercentage);
-var costWithTax = costWithoutTax * (1 + salesTaxPercentage);
+// Declared and defined the discount percentage of the item.
+var discountPercentage = 25;
+// Declared and defined the sale tax percentage of the state.
+var salesTaxPercentage = 7;
+// Declared the costWithoutTax variable and set it equal to the original price
+// of the item * the percentage remaining after the discount 
+// (1 - discountPercentage).
+var costWithoutTax = originalPrice * (1 - discountPercentage / 100);
+// Declared the costWithTax variable and set it equal to the cost of the item
+// without tax + the amount that taxes add to the price of the item.
+var costWithTax = costWithoutTax * (1 + salesTaxPercentage / 100);
 
-console.log(costWithoutTax);
-console.log(costWithTax);
+// Printed the variables itemDescription, originalPrice, discountPercentage,
+// costWithoutTax, and costWithTax to the console.
+console.log("Your " + itemDescription + " was originally $" + originalPrice + 
+", but after a " + discountPercentage + "% discount, it is now $" + 
+costWithoutTax + " without tax, and $" + costWithTax + " with tax.");
+
+
+//End
