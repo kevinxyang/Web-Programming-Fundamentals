@@ -14,3 +14,15 @@ var dogAge = humanAge * 7;
 
 //Printed Sparky's real and dog age to the console.
 console.log("Sparky is" + " " + humanAge + " " + "which is" + " " + dogAge + " " + "in dog years.");
+
+
+
+// Slice of Pie (part 1)
+// =====================
+
+var slicesPerPizza = 8;
+var numberOfPeople = 20;
+var numberOfPizzas = 12;
+var slicesPerPerson = numberOfPizzas * slicesPerPizza / numberOfPeople;
+
+console.log(slicesPerPerson);
