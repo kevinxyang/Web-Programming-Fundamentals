@@ -70,3 +70,15 @@ console.log("You have spent a total of $" + totalAmount +
 " per week.");
 
 
+
+// Discounts
+// =========
+
+var originalPrice = 250;
+var discountPercentage = .25;
+var salesTaxPercentage = .07;
+var costWithTax = 0;
+var costWithoutTax = originalPrice * (1 - discountPercentage);
+
+console.log(costWithTax);
+console.log(costWithoutTax);
