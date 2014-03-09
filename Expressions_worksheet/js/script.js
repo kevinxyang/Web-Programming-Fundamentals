@@ -2,4 +2,12 @@
 // Expressions Worksheet
 // March 9th, 2014
 
-alert("Hello World!");
+
+
+// Dog Years
+// =========
+
+var humanAge = 3;
+var dogAge = humanAge * 7;
+
+console.log(dogAge);
