@@ -77,8 +77,8 @@ console.log("You have spent a total of $" + totalAmount +
 var originalPrice = 250;
 var discountPercentage = .25;
 var salesTaxPercentage = .07;
-var costWithTax = 0;
 var costWithoutTax = originalPrice * (1 - discountPercentage);
+var costWithTax = costWithoutTax * (1 + salesTaxPercentage);
 
-console.log(costWithTax);
 console.log(costWithoutTax);
+console.log(costWithTax);
