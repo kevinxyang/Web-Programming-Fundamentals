@@ -47,7 +47,18 @@ console.log("Each person ate" + " " + slicesPerPerson + " " +
 // number of people at the party.
 var sparkysSlices = numberOfPizzas * slicesPerPizza % numberOfPeople;
 
-//Printed sparkysSlices to the console.
+// Printed sparkysSlices to the console.
 console.log("Sparky got" + " " + sparkysSlices + " " + "slices of pizza.");
 
 
+
+// Average Shopping Bill
+// =====================
+
+var groceryTotals = Array(89, 58, 40, 110, 76);
+var totalAmount = groceryTotals[0] + groceryTotals[1] + groceryTotals[2] + 
+groceryTotals[3] + groceryTotals[4];
+var averageSpending = totalAmount / 5;
+
+console.log(totalAmount);
+console.log(averageSpending);
