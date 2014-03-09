@@ -13,8 +13,7 @@ var humanAge = 3;
 var dogAge = humanAge * 7;
 
 // Printed Sparky's real and dog age to the console.
-console.log("Sparky is" + " " + humanAge + " " + "which is" + " " + dogAge + " "
-+ "in dog years.");
+console.log("Sparky is " + humanAge + " which is " + dogAge + " in dog years.");
 
 
 
@@ -34,8 +33,8 @@ var numberOfPizzas = 12;
 var slicesPerPerson = numberOfPizzas * slicesPerPizza / numberOfPeople;
 
 // Printed slicesPerPerson to the console.
-console.log("Each person ate" + " " + slicesPerPerson + " " +
-"slices of pizza at the party.");
+console.log("Each person ate " + slicesPerPerson + 
+" slices of pizza at the party.");
 
 
 
@@ -48,17 +47,26 @@ console.log("Each person ate" + " " + slicesPerPerson + " " +
 var sparkysSlices = numberOfPizzas * slicesPerPizza % numberOfPeople;
 
 // Printed sparkysSlices to the console.
-console.log("Sparky got" + " " + sparkysSlices + " " + "slices of pizza.");
+console.log("Sparky got " + sparkysSlices + " slices of pizza.");
 
 
 
 // Average Shopping Bill
 // =====================
 
+// Declared and defined the weekly grocery totals in an array.
 var groceryTotals = Array(89, 58, 40, 110, 76);
+// Declared the total amount spent on groceries over 5 weeks and set it equal to
+// the sum of all the entries in the array.
 var totalAmount = groceryTotals[0] + groceryTotals[1] + groceryTotals[2] + 
 groceryTotals[3] + groceryTotals[4];
+// Declared the average amount spent on groceries per week and set it equal to
+// the sum (totalAmount) and divided it by the number of weeks (5)
 var averageSpending = totalAmount / 5;
 
-console.log(totalAmount);
-console.log(averageSpending);
+// Printed totalAmount and averageSpending to the console.
+console.log("You have spent a total of $" + totalAmount + 
+" on groceries over 5 weeks. That's an average of $" + averageSpending + 
+" per week.");
+
+
