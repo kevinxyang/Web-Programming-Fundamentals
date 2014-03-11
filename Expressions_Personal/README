@@ -28,20 +28,11 @@ Make at least 20 meaningful commits.
 Personal
 --------
 
-Food Tracker
+Gym Progress Tracker
 
-Purpose: I'm trying to lose some weight, so a food tracker might be of value to
-me in my daily life.
+Purpose: I go to the gym a lot, so a program that can track my progress, would
+be helpful.
 
-Givens:
-
-How many items did I have for breakfast?
-List each item that I had for breakfast.
-
-How many items did I have for lunch?
-List each item that I had for lunch.
-
-How many items did I have for dinner?
-List each item that I had for dinner.
-
+Using a multidimensional array, it tracks how much I have lifted in each
+exercise over the course of a week.
 
