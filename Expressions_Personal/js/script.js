@@ -4,13 +4,13 @@
 // Givens
 
 var benchpressSets = prompt("# of sets of Bench Presses",
-	"Enter the total number of sets here.");
+    "Enter the total number of sets here.");
 var squatSets = prompt("# of sets of Squats",
-	"Enter the total number of sets here.");
+    "Enter the total number of sets here.");
 var deadliftSets = prompt("# of sets of Deadlifts",
-	"Enter the total number of sets here.");
+    "Enter the total number of sets here.");
 var overheadpressSets = prompt("# of sets of Overhead Presses",
-	"Enter the total number of sets here.");
+    "Enter the total number of sets here.");
 
 var benchpressReps = prompt("# of Bench Presses per set",
 	"Enter the total number of reps in each set here.");
