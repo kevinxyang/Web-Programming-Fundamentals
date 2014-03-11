@@ -28,16 +28,17 @@ var totalDeadlift = liftRoutine[2] * deadliftSets * deadliftReps;
 var totalOverheadpress = liftRoutine[3] * overheadpressSets * overheadpressReps;
 
 var totalWeight = totalBench + totalSquat + totalDeadlift + totalOverheadpress;
-var totalSets = benchpressSets + squatSets + deadliftSets + overheadpressSets;
-var totalReps = benchpressReps + squatReps + deadliftReps + overheadpressReps;
+var totalSets = Number(benchpressSets) + Number(squatSets) + Number(deadliftSets) + Number(overheadpressSets);
+var totalReps = Number(benchpressReps) + Number(squatReps) + Number(deadliftReps) + Number(overheadpressReps);
 
 var averageWeightPerSet = totalWeight / totalSets;
 var averageWeightPerRep = totalWeight / totalReps;
 
 console.log(totalBench);
+console.log(totalSquat);
+console.log(totalDeadlift);
+console.log(totalOverheadpress);
 console.log(totalWeight);
-console.log(totalSets);
-console.log(totalReps);
 console.log(averageWeightPerSet);
 console.log(averageWeightPerRep);
 
