@@ -79,6 +79,8 @@ var averageWeightPerSet = totalWeight / totalSets;
 // Calculates the average weight lifted per rep.
 var averageWeightPerRep = totalWeight / totalReps;
 
+
+
 // Prints out today's lifting total as well as the average weight per set and 
 // average weight per rep.
 console.log("You benched a total of " + totalBench + " lbs today.");
