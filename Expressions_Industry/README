@@ -25,22 +25,15 @@ Make at least 20 meaningful commits.
 
 
 
-Personal
---------
-
-Calorie Counter.
-
-
-
 Industry
 --------
 
-Site Traffic Monitor.
+Site Traffic Monitor
 
+Tracks the traffic and user activity of a site.
 
-Wacky
------
-
-How many licks does it take to get to the center of a tootsie pop?
+The user inputs the how many users have visited the site, how many of them are
+reoccuring users, and from which search engine are they finding your site
+through.
 
 
