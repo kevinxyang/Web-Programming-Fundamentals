@@ -79,12 +79,14 @@ var averageWeightPerSet = totalWeight / totalSets;
 // Calculates the average weight lifted per rep.
 var averageWeightPerRep = totalWeight / totalReps;
 
-console.log(totalBench);
-console.log(totalSquat);
-console.log(totalDeadlift);
-console.log(totalOverheadpress);
-console.log(totalWeight);
-console.log(averageWeightPerSet);
-console.log(averageWeightPerRep);
+// Prints out today's lifting total as well as the average weight per set and 
+// average weight per rep.
+console.log("You benched a total of " + totalBench + " lbs today.");
+console.log("You squatted a total of " + totalSquat + " lbs today.");
+console.log("You deadlifted a total of " + totalDeadlift + " lbs today.");
+console.log("You overhead pressed a total of " + totalOverheadpress 
+    + " lbs today.");
+console.log("On average you lifted about " + averageWeightPerSet 
+    + " lbs per set and about " + averageWeightPerRep + " lbs per rep today.");
 
 // End
