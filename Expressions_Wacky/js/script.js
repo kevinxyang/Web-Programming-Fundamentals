@@ -21,7 +21,7 @@ var flavor = prompt("What flavor was the Tootsie Pop?");
 
 // Calculates the number of licks per second by dividing the number of licks by
 // the time multiplied by 60.
-var licksPerSecond = numberOfLicks / (time * 60);
+var licksPerSecond = Number(numberOfLicks) / (Number(time) * 60);
 
 
 
