@@ -2,6 +2,8 @@
 // Conditionals Worksheet
 // March 17th, 2014
 
+
+
 // Celsius to Fahrenheit Converter
 // ===============================
 
@@ -21,6 +23,8 @@ if(unit === "C"){
     console.log("The temperature is " + degCent + " degrees Celsius.");
 }
 
+
+
 // Last Chance for Gas!
 // ====================
 
@@ -39,4 +43,37 @@ if(milesLeft > 200){
 }else{
     console.log("You only have " + gasLeft 
         + " gallons of gas in your tank, better get gas now while you can!");
+}
+
+
+
+// Grade Letter Calculator
+// =======================
+
+var grade = Number(prompt("What was your grade percentage?"));
+
+if(grade >= 95){
+    console.log("You have a " + grade 
+        + "%, which means you have earned an A+ in the class");
+}else if(grade >= 90){
+    console.log("You have a " + grade 
+        + "%, which means you have earned an A in the class");
+}else if(grade >= 85){
+    console.log("You have an " + grade 
+        + "%, which means you have earned a B+ in the class");
+}else if(grade >= 80){
+    console.log("You have an " + grade 
+        + "%, which means you have earned a B in the class");
+}else if(grade >= 76){
+    console.log("You have a " + grade 
+        + "%, which means you have earned a C+ in the class");
+}else if(grade >= 73){
+    console.log("You have a " + grade 
+        + "%, which means you have earned a C in the class");
+}else if(grade >= 70){
+    console.log("You have a " + grade 
+        + "%, which means you have earned a D in the class");
+}else{
+    console.log("You have a " + grade 
+        + "%, which means you have earned an F in the class");
 }
