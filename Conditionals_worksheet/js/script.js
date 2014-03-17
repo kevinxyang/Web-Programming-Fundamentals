@@ -54,26 +54,49 @@ var grade = Number(prompt("What was your grade percentage?"));
 
 if(grade >= 95){
     console.log("You have a " + grade 
-        + "%, which means you have earned an A+ in the class");
+        + "%, which means you have earned an A+ in the class.");
 }else if(grade >= 90){
     console.log("You have a " + grade 
-        + "%, which means you have earned an A in the class");
+        + "%, which means you have earned an A in the class.");
 }else if(grade >= 85){
     console.log("You have an " + grade 
-        + "%, which means you have earned a B+ in the class");
+        + "%, which means you have earned a B+ in the class.");
 }else if(grade >= 80){
     console.log("You have an " + grade 
-        + "%, which means you have earned a B in the class");
+        + "%, which means you have earned a B in the class.");
 }else if(grade >= 76){
     console.log("You have a " + grade 
-        + "%, which means you have earned a C+ in the class");
+        + "%, which means you have earned a C+ in the class.");
 }else if(grade >= 73){
     console.log("You have a " + grade 
-        + "%, which means you have earned a C in the class");
+        + "%, which means you have earned a C in the class.");
 }else if(grade >= 70){
     console.log("You have a " + grade 
-        + "%, which means you have earned a D in the class");
+        + "%, which means you have earned a D in the class.");
 }else{
     console.log("You have a " + grade 
-        + "%, which means you have earned an F in the class");
+        + "%, which means you have earned an F in the class.");
 }
+
+
+
+// Tire Pressure I
+// ===============
+
+var tirePressure = Array();
+
+tirePressure[0] = Number(prompt("What is the pressure of the front-left tire?", 
+    "Enter the pressure in PSI."));
+tirePressure[1] = Number(prompt("What is the pressure of the front-right tire?", 
+    "Enter the pressure in PSI."));
+tirePressure[2] = Number(prompt("What is the pressure of the back-left tire?", 
+    "Enter the pressure in PSI."));
+tirePressure[3] = Number(prompt("What is the pressure of the back-right tire?", 
+    "Enter the pressure in PSI."));
+
+if(tirePressure[0] === tirePressure[1] && tirePressure[2] === tirePressure[3]){
+    console.log("The tires pass spec!");
+}else{
+    console.log("Get your tires checked out!");
+}
+
