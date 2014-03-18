@@ -1,0 +1,24 @@
+Kevin Yang
+Web Programming Fundamentals
+March 18th, 2014
+============================
+
+
+
+Conditionals Assignment
+=======================
+
+Deliverables
+------------
+
+Use some type of math in the calculation.
+Use at least 2 factors as variables. Do not hard code them.
+Over the entire assignment make sure to have at least one example of each of the below.
+	1. A conditional operator (ternary).
+	2. An if statement, with a condition and a block of code that executes if the condition is true.
+	3. An else if statement, with a condition and a block of code that executes if the condition is true.
+	4. An else block.
+	5. A conditional operator other than equals (>, <, >=, <=, &&, ||, etc).
+Validation for every prompted value.
+Comment every line of code.
+Make at least 20 meaningful commits.
