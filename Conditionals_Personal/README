@@ -13,12 +13,26 @@ Deliverables
 
 Use some type of math in the calculation.
 Use at least 2 factors as variables. Do not hard code them.
-Over the entire assignment make sure to have at least one example of each of the below.
-	1. A conditional operator (ternary).
-	2. An if statement, with a condition and a block of code that executes if the condition is true.
-	3. An else if statement, with a condition and a block of code that executes if the condition is true.
-	4. An else block.
-	5. A conditional operator other than equals (>, <, >=, <=, &&, ||, etc).
+Over the entire assignment make sure to have at least one example of each of the
+below.
+    1. A conditional operator (ternary).
+    2. An if statement, with a condition and a block of code that executes if 
+       the condition is true.
+    3. An else if statement, with a condition and a block of code that executes
+       if the condition is true.
+    4. An else block.
+    5. A conditional operator other than equals (>, <, >=, <=, &&, ||, etc).
 Validation for every prompted value.
 Comment every line of code.
 Make at least 20 meaningful commits.
+
+
+
+Personal
+--------
+
+Calorie Counter
+
+The givens are your total daily expenditure estimate, the foods you have eaten
+and their respective calories. Then it calculates how much you are over or 
+under. And how much weight you would lose or gain if everyday was like "today".
