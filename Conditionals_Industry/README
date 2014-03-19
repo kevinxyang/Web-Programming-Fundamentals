@@ -22,3 +22,14 @@ Over the entire assignment make sure to have at least one example of each of the
 Validation for every prompted value.
 Comment every line of code.
 Make at least 20 meaningful commits.
+
+
+
+Industry
+--------
+
+Mobile First or...?
+
+Takes the users input about what kind of traffic the site is getting (mobile or computer) and compares the
+two in terms of overall effectiveness. The code will print out which what percent of users are accessing
+the site through mobile devices versus traditional devices, and which one seems to be more popular.
