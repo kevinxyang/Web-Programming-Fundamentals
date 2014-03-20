@@ -9,8 +9,18 @@
 // ------
 
 var sneezes = prompt("Enter the number of times you've heard someone sneeze today.");
-var blessYous = prompt("Enter the number of times you've heard someone say bless you after a sneeze today.");
+if(sneezes === ""){
+	sneezes = prompt("Please enter a value.");
+}else{
+	alert("The value you entered was " + sneezes + ".")
+}
 
+var blessYous = prompt("Enter the number of times you've heard someone say bless you after a sneeze today.");
+if(blessYous === ""){
+	blessYous = prompt("Please enter a value.");
+}else{
+	alert("The value you entered was " + blessYous + ".")
+}
 
 
 // Calculations
