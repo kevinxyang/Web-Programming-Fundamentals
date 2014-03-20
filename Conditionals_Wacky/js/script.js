@@ -8,14 +8,25 @@
 // Givens
 // ------
 
+var sneezes;
+var blessYous;
+
 
 
 // Calculations
 // ------------
+
+var ratio = Number(blessYous) / Number(sneezes);
 
 
 
 // Output
 // ------
 
-console.log("Hello World!");
+if(ratio > .8){
+	console.log(A);
+}else if(ratio > .5){
+	console.log(B);
+}else{
+	console.log(C);
+}
