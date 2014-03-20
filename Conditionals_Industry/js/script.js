@@ -12,16 +12,67 @@
 // ------
 
 var month = prompt("Enter the month that corresponds to this data.", "January");
+if(month === ""){
+    month = prompt("Please enter a month.");
+}else{
+    alert("Your entry was " + month + ".")
+}
 
 var mobileWeek1 = prompt("Enter the number of people that viewed your site through a mobile device in week 1.");
+if(mobileWeek1 === ""){
+    mobileWeek1 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + mobileWeek1 + ".")
+}
+
 var mobileWeek2 = prompt("Enter the number of people that viewed your site through a mobile device in week 2.");
+if(mobileWeek2 === ""){
+    mobileWeek2 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + mobileWeek2 + ".")
+}
+
 var mobileWeek3 = prompt("Enter the number of people that viewed your site through a mobile device in week 3.");
+if(mobileWeek3 === ""){
+    mobileWeek3 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + mobileWeek3 + ".")
+}
+
 var mobileWeek4 = prompt("Enter the number of people that viewed your site through a mobile device in week 4.");
+if(mobileWeek4 === ""){
+    mobileWeek4 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + mobileWeek4 + ".")
+}
 
 var desktopWeek1 = prompt("Enter the number of people that viewed your site through a desktop device in week 1.");
+if(desktopWeek1 === ""){
+    desktopWeek1 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + desktopWeek1 + ".")
+}
+
 var desktopWeek2 = prompt("Enter the number of people that viewed your site through a desktop device in week 2.");
+if(desktopWeek2 === ""){
+    desktopWeek2 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + desktopWeek2 + ".")
+}
+
 var desktopWeek3 = prompt("Enter the number of people that viewed your site through a desktop device in week 3.");
+if(desktopWeek3 === ""){
+    desktopWeek3 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + desktopWeek3 + ".")
+}
+
 var desktopWeek4 = prompt("Enter the number of people that viewed your site through a desktop device in week 4.");
+if(desktopWeek4 === ""){
+    desktopWeek4 = prompt("Please enter a number.");
+}else{
+    alert("Your entry was " + desktopWeek4 + ".")
+}
 
 var siteTraffic = Array();
 
