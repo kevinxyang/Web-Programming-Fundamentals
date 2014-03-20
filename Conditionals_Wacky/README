@@ -22,3 +22,14 @@ Over the entire assignment make sure to have at least one example of each of the
 Validation for every prompted value.
 Comment every line of code.
 Make at least 20 meaningful commits.
+
+
+
+Wacky
+-----
+
+How many times you hear someone sneeze versus how many times you hear someone say bless you.
+
+Prompts the user for number of sneezes and number of bless yous. Calculates the ratio of
+sneezes to bless yous, and depending on the ratio the program will print out different
+results to the console.
