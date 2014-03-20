@@ -128,8 +128,12 @@ var totalMobile = siteTraffic[0][0] + siteTraffic[0][1] + siteTraffic[0][2] + si
 // Adds up all the values in the second array to calculate the total number of users that accessed the site
 // through a desktop device in the specified month.
 var totalDesktop = siteTraffic[1][0] + siteTraffic[1][1] + siteTraffic[1][2] + siteTraffic[1][3];
+// Adds totalMobile and totalDesktop to calculate the total number of visitors in a month.
 var totalVisitors = totalMobile + totalDesktop;
 
+// Calculates the number of days in a specific month by checking the value of month. If the value stored in
+// month is September, April, June, or November, then days is set to 30. If February is stored in month, then
+// days is set to 28. Else, days is set to 31.
 var days;
 if(month === "September" || month === "April" || month === "June" || month === "November"){
     days = 30;
@@ -139,9 +143,13 @@ if(month === "September" || month === "April" || month === "June" || month === "
     days = 31;
 }
 
+// Calculates the average number of mobile visitors per day.
 var averageMobile = totalMobile / days;
+// Calculates the average number of desktop visitors per day.
 var averageDesktop = totalDesktop / days;
+// Calculates the percentage of users that access the site through a mobile device.
 var percentageMobile = totalMobile / totalVisitors;
+// Calculates the percentage of users that access the site through a desktop device.
 var percentageDesktop = totalDesktop / totalVisitors;
 
 
@@ -149,9 +157,14 @@ var percentageDesktop = totalDesktop / totalVisitors;
 // Output
 // ------
 
+// Prints the total number of visitors in that specific month to the console.
 console.log("You had a total of " +totalVisitors + " visitors in the month of " + month + ".");
+// Prints the percentage of mobile users to the console.
 console.log("An average of " + averageMobile + " people viewed your site through a mobile device per day.");
+// Prints the percentage of desktop user to the console.
 console.log("An average of " + averageDesktop + " people viewed your site through a desktop device per day.");
+// Ternary operator that prints out how many more mobile users there are if there are more mobile users, else
+// it prints out how many more desktop users there are.
 (percentageMobile > percentageDesktop) ? console.log((percentageMobile - percentageDesktop) * 100 
 + "% more users viewed your site through a mobile device!") : console.log((percentageDesktop - percentageMobile) 
 * 100 + "% more users viewed your site through a desktop device!");
