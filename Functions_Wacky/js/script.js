@@ -13,17 +13,22 @@
 // Givens
 // ------
 
+// Prompts the user for the number of games he or she would like to play.
 var games = Number(prompt("How many games would you like to play?", "Please enter an odd number."));
 
+// Checks to see that it is an odd number of games.
 if (games % 2 == 0){
 	games = Number(prompt("Please enter an ODD number."));
 }
 
+// Creates an array that will hold all the users moves.
 var gamesArray = Array();
 
+// For each game, prompt the user for his or her "move".
 for (var i = 0; i < games; i++){
 	gamesArray[i] = prompt("Rock, Paper, Scissors... SHOOT!", "Rock");
 
+	// If it's not a valid move, reprompt the user.
 	if (gamesArray[i] != "Rock" && gamesArray[i] != "Paper" && gamesArray[i] != "Scissors"){
 		gamesArray[i] = prompt("Please enter a VALID value.", "Rock");
 	}
