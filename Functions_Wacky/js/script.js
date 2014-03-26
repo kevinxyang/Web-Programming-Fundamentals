@@ -136,7 +136,9 @@ var simulator = function(gamesArray, computerMoves){
 // Calculations
 // ------------
 
+// Call the function computerMoves.
 movesChosen = computerMoves();
+// Call the function simulator.
 resultsArray = simulator(gamesArray, computerMoves);
 
 
@@ -146,6 +148,10 @@ resultsArray = simulator(gamesArray, computerMoves);
 
 console.log("-----------------");
 console.log(" ");
+// A ternary that prints you lose if total losses are greater than or equal to wins, otherwise
+// it prints you win! Remember ties go to the computer :D.
 (resultsArray[1] >= resultsArray[0]) ? console.log("You lose!") : console.log("You win!");
+
+// End
 
 // End
