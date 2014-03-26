@@ -61,8 +61,15 @@ var mostTime = longestTime();
 
 // Output
 // ------
-console.log(siteList);
-console.log(timeSpent);
-console.log(mostTime);
 
+if (timeSpent > 640){
+	console.log("Wow, you've spent " + timeSpent + " minutes on the internet, I'm cutting you off.");
+} else if (timeSpent > 480){
+	console.log("You've spent " + timeSpent + " minutes on the internet, you should take a break.");
+} else {
+	console.log("You've spent " + timeSpent + " minutes on the internet.");
+}
 
+console.log("The site you spent the longest on was " + mostTime[0] + " for " + mostTime[1] + " minutes.");
+
+// End
