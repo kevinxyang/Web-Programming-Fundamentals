@@ -39,18 +39,23 @@ for (var i = 0; i < games; i++){
 // Functions
 // ---------
 
+// A function that randomly generates the computers moves.
 var computerMoves = function(){
+	// An array of "possible" computer moves.
 	var moves = Array();
 	moves[0] = "Rock";
 	moves[1] = "Paper";
 	moves[2] = "Scissors";
 
+	// An array that holds the computers moves.
 	var movesChosen = Array();
 
+	// For each game, randomly choose a possible move for the computer.
 	for (var i = 0; i < games; i++){
 		movesChosen[i] = moves[Math.floor(Math.random() * moves.length)];
 	}
 	
+	// Returns the array of moves.
 	return movesChosen;
 
 }
