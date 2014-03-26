@@ -75,7 +75,9 @@ var omelettesMade = function(eggs, cheese, tomatoes){
 // Output
 // ------
 
-if (eggs > 0){
+if (eggs < 3){
+	console.log("You don't have enough eggs, go to the grocery store!");
+} else {
 	omelettesMade(eggs, cheese, tomatoes);
 }
 
