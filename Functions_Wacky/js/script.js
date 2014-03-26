@@ -123,4 +123,4 @@ console.log("-----------------");
 console.log(" ");
 (resultsArray[1] >= resultsArray[0]) ? console.log("You lose!") : console.log("You win!");
 
-
+// End
