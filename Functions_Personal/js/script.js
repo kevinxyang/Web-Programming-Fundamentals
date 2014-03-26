@@ -5,28 +5,79 @@
 
 
 
-// Title Here
-// ==========
+// Omelette Maker
+// ==============
 
 
 
 // Givens
 // ------
 
+var eggs = Number(prompt("How many eggs do you have?"));
+var cheese = Number(prompt("How many slices of cheese do you have?"));
+var tomatoes = Number(prompt("How many whole tomatoes do you have?"));
+
 
 
 // Functions
 // ---------
 
-
-
-// Calculations
-// ------------
+var omelettesMade = function(eggs, cheese, tomatoes){
+	omelettesMade = Math.floor(eggs / 3);
+	var omelettesWithEverything = 0;
+	var omelettesWithTomatoes = 0;
+	var omelettesWithCheese = 0;
+	if (tomatoes > cheese){
+		for (cheese; cheese > 0; cheese--){
+			if (omelettesMade == 0){
+				break;
+			} else {
+				omelettesMade--;
+				tomatoes--;
+				omelettesWithEverything++;
+			};
+		};
+		for (tomatoes; tomatoes > 0; tomatoes--){
+			if (omelettesMade == 0){
+				break;
+			} else {
+				omelettesMade--;
+				omelettesWithTomatoes++;
+			};
+		};
+	} else {
+		for (tomatoes; tomatoes > 0; tomatoes--){
+			if (omelettesMade == 0){
+				break;
+			} else {
+				omelettesMade--;
+				cheese--;
+				omelettesWithEverything++;
+			};
+		};
+		for (cheese; cheese > 0; cheese--){
+			if (omelettesMade == 0){
+				break;
+			} else {
+				omelettesMade--;
+				omelettesWithCheese++;
+			};
+		};
+	};
+	console.log("You made " + omelettesMade + " plain omelettes.");
+	console.log("You made " + omelettesWithEverything + " omelettes with everything.");
+	console.log("You made " + omelettesWithCheese + " omelettes with just cheese.");
+	console.log("You made " + omelettesWithTomatoes + " omelettes with just tomatoes.");
+}
 
 
 
 // Output
 // ------
-console.log("Hello World!");
 
+if (eggs > 0){
+	omelettesMade(eggs, cheese, tomatoes);
+}
+
+// End
 
