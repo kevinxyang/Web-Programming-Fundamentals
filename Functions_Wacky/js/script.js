@@ -60,58 +60,73 @@ var computerMoves = function(){
 
 }
 
+// A function that "simulates" each game by comparing the player's move with the computer's move.
 var simulator = function(gamesArray, computerMoves){
+	// Declared variables for wins, losses, and ties. We will increment them. Default set to 0.
 	var wins = 0;
 	var losses = 0;
 	var ties = 0;
+	// An array that will eventually hold the above variables, after we've incremented them.
 	var resultsArray = Array();
 
+	// For each game, compare the moves.
 	for (var i = 0; i < games; i++){
 		console.log("------------ " + "Game " + (i + 1) + " ------------");
+		// If the player's move and the computer's move are the same, then increment ties by 1.
 		if (gamesArray[i] == movesChosen[i]){
 			console.log("You both chose " + gamesArray[i] + ", it's a tie!");
 			ties++;
 		}
+		// Else if, the player chooses Rock...
 		else if (gamesArray[i] == "Rock"){
+			// and the computer chooses Scissors, then increment wins by 1.
 			if (movesChosen[i] == "Scissors"){
 				console.log("Rock beats Scissors, you win!");
 				wins++;
+			// else, increment losses by 1.
 			} else {
 				console.log("Rock loses to Paper, you lose!");
 				losses++;
 			}
 		}
+		// Else if, the player chooses Paper...
 		else if (gamesArray[i] == "Paper"){
+			// and the computer chooses Rock, increment wins by 1.
 			if (movesChosen[i] == "Rock"){
 				console.log("Paper beats Rock, you win!");
 				wins++;
+			// else, increment losses by 1.
 			} else {
 				console.log("Paper loses to Scissors, you lose!");
 				losses++;
 			}
 		}
+		// Else if, the player choose Scissors...
 		else if (gamesArray[i] == "Scissors"){
+			// and the computer chooses Paper, increment wins by 1.
 			if (movesChosen[i] == "Paper"){
 				console.log("Scissors beats Paper, you win!");
 				wins++;
+			// else, increment losses by 1.
 			} else {
 				console.log("Scissors loses to Rock, you lose!");
 				losses++;
 			}
 		}
-		//console.log("Player: " + gamesArray[i]);
-		//console.log("Computer: " + movesChosen[i]);
 	}
+	// Print the totals to console.
 	console.log(" ");
 	console.log("-----------------");
 	console.log("Total Wins: " + wins);
 	console.log("Total Losses: " + losses);
 	console.log("Total Ties: " + ties);
 
+	// Add results to the results array.
 	resultsArray[0] = wins;
 	resultsArray[1] = losses;
 	resultsArray[2] = ties;
 
+	// Return the results array.
 	return resultsArray;
 
 }
