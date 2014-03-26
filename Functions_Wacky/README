@@ -10,13 +10,13 @@ Deliverables
 
 Prompt the user for the values, do not hard code.
 Over all 3 projects, there must be one instance of:
-	A ternary
-	An else if
-	An anonymous function
-	A normal "named" function
-	An expression with two arithmetic operators
-	A function with 3 parameters
-	At least one logical operator
+    A ternary
+    An else if
+    An anonymous function
+    A normal "named" function
+    An expression with two arithmetic operators
+    A function with 3 parameters
+    At least one logical operator
 Make 20 meaningful commits to github.
 
 
